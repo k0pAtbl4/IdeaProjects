@@ -13,6 +13,7 @@ public class Rtf_Documents extends Printer {
 
     @Override
     void print(String color) {
+        super.print(color);
         System.out.println(color + content + ANSI_RESET);
     }
 }
