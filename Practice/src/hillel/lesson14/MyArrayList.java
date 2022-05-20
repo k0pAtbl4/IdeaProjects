@@ -5,16 +5,16 @@ import java.util.Arrays;
 public class MyArrayList {
     public Object[] array = new Object[1];
 
-    MyArrayList(Object a){
+    public MyArrayList(Object a){
         array[0] = a;
     }
 
-    void add(Object value){
+    public void add(Object value){
         array = Arrays.copyOf(array, array.length + 1);
         array[array.length - 1] = value;
     }
 
-    void remove(int index){
+    public void remove(int index){
         if(array.length - 1 >= index) {
             System.arraycopy(array, index + 1, array, index, array.length - index - 1);
             array = Arrays.copyOf(array, array.length - 1);
@@ -23,15 +23,15 @@ public class MyArrayList {
         }
     }
 
-    void clear(){
+    public void clear(){
         array = Arrays.copyOf(array, 0);
     }
 
-    int size(){
+    public int size(){
         return array.length;
     }
 
-    Object get(int index){
+    public Object get(int index){
         if(array.length - 1 >= index) {
             return array[index];
         } else {
@@ -39,7 +39,7 @@ public class MyArrayList {
         }
     }
 
-    void printArray(){
+    public void printArray(){
         System.out.println(Arrays.toString(array));
     }
 }
