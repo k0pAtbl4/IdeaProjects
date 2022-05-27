@@ -3,7 +3,7 @@ package hillel.lesson14;
 import java.util.Arrays;
 
 public class MyArrayList {
-    public Object[] array = new Object[1];
+    private Object[] array = new Object[1];
 
     public MyArrayList(Object a){
         array[0] = a;
