@@ -19,4 +19,12 @@ public class Rectangle {
         public void setOy(double oy) {
             this.oy = oy;
         }
+
+        public double areaCalculator(){
+            return ox * oy;
+        }
+
+        public double perimeterCalculator(){
+            return (ox * 2) + (oy * 2);
+        }
 }
