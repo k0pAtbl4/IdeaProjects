@@ -1,4 +1,5 @@
-package hillel.lesson10;
+package hillel.lesson10.homework2;
+
 import java.util.Scanner;
 
 public class homework10_2 {
@@ -29,53 +30,5 @@ public class homework10_2 {
         bookTitle.show();
         bookAuthor.show();
         bookContent.show();
-    }
-}
-
-class Title{
-    private String title_element;
-
-    public String getTitle_element() {
-        return title_element;
-    }
-
-    public void setTitle_element(String title_element) {
-        this.title_element = title_element;
-    }
-
-    void show(){
-        System.out.println("Название: " + title_element);
-    }
-}
-
-class Author{
-    private String author_element;
-
-    public String getAuthor_element() {
-        return author_element;
-    }
-
-    public void setAuthor_element(String author_element) {
-        this.author_element = author_element;
-    }
-
-    void show(){
-        System.out.println("Автор: " + author_element);
-    }
-}
-
-class Content{
-    private String content_element;
-
-    public String getContent_element() {
-        return content_element;
-    }
-
-    public void setContent_element(String content_element) {
-        this.content_element = content_element;
-    }
-
-    void show(){
-        System.out.println("Содержание: " + content_element);
     }
 }
